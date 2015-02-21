@@ -28,10 +28,7 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml
 
-# Kernel
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/dt.img:dt.img
-    
+   
 # Prebuilt
 #PRODUCT_COPY_FILES += \
 #    $(call find-copy-subdir-files,*,device/xiaomi/armani/prebuilt,system)
