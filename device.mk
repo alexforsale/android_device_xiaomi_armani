@@ -30,16 +30,15 @@ PRODUCT_COPY_FILES += \
 
 # Kernel
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/kernel:kernel \
     $(LOCAL_PATH)/dt.img:dt.img
     
 # Prebuilt
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,device/xiaomi/armani/prebuilt,system)
+#PRODUCT_COPY_FILES += \
+#    $(call find-copy-subdir-files,*,device/xiaomi/armani/prebuilt,system)
 
 # Rootdir
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,device/xiaomi/armani/rootdir,root)
+#PRODUCT_COPY_FILES += \
+#    $(call find-copy-subdir-files,*,device/xiaomi/armani/rootdir,root)
 
 # Keystore
 PRODUCT_PACKAGES += \
