@@ -18,7 +18,7 @@ include device/qcom/msm8226/BoardConfig.mk
 LOCAL_PATH := device/xiaomi/armani
 
 # inherit from the proprietary version
--include vendor/xiaomi/armani/BoardConfigVendor.mk
+include vendor/xiaomi/armani/BoardConfigVendor.mk
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true

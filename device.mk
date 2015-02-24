@@ -77,4 +77,4 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp
 
 # Call the proprietary setup
-$(call inherit-product-if-exist, vendor/xiaomi/armani/armani-vendor.mk)
+$(call inherit-product, vendor/xiaomi/armani/armani-vendor.mk)
