@@ -129,6 +129,9 @@ static char *camera_fixup_setparams(UNUSED int id, const char *settings)
     params.dump();
 #endif
 
+    params.set("antibanding", "50hz");
+    params.set("auto-exposure", "center-weighted");
+    params.set("focus-mode", "continuous-picture");
     params.set("zsl", "on");
 
     if (params.get(android::CameraParameters::KEY_SCENE_MODE)) {
