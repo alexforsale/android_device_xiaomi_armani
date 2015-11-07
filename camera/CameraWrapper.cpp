@@ -134,12 +134,25 @@ static char *camera_fixup_setparams(int id, const char *settings)
     params.set("zsl", "on");
 
     if (params.get(android::CameraParameters::KEY_SCENE_MODE)) {
-        const char *sceneMode = params.get(android::CameraParameters::KEY_SCENE_MODE);
-        if (strcmp(sceneMode, "hdr") == 0) {
-            params.set(KEY_QC_MORPHO_HDR, "true");
-        } else {
-            params.set(KEY_QC_MORPHO_HDR, "false");
+        hdrMode = (!strcmp(params.get(android::CameraParameters::KEY_SCENE_MODE), "hdr"));
+    }
+
+    /* Disable ZSL and HDR snapshots in video mode */
+    if (videoMode) {
+        params.set("zsl", "off");
+        if (hdrMode) {
+            params.set(android::CameraParameters::KEY_SCENE_MODE, "auto");
         }
+    } else {
+        params.set("zsl", "on");
+    }
+
+    /* Enable morpho and disable flash in HDR mode */
+    if (hdrMode && !videoMode) {
+        params.set(KEY_QC_MORPHO_HDR, "true");
+        params.set(android::CameraParameters::KEY_FLASH_MODE, android::CameraParameters::FLASH_MODE_OFF);
+    } else {
+        params.set(KEY_QC_MORPHO_HDR, "false");
     }
 
 #if !LOG_NDEBUG
