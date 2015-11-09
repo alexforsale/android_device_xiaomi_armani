@@ -2,4 +2,4 @@
   /dev/video* rw,
 
   # videl4linux 2
-  /dev/v4l-subdev[0-15]* rw,
+  /dev/v4l-subdev* rw,
