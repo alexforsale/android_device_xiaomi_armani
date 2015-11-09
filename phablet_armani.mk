@@ -26,3 +26,6 @@ PRODUCT_COPY_FILES += \
     device/xiaomi/armani/ubuntu/apparmor_video:system/ubuntu/usr/share/apparmor/hardware/video.d/apparmor-easyprof-ubuntu_android \
     device/xiaomi/armani/ubuntu/rcS:system/ubuntu/etc/default/hwclock
 
+# device id for ubuntu initrd
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.product.device=armani
