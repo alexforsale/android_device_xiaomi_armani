@@ -19,11 +19,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Ubuntu Overlay Files
 PRODUCT_COPY_FILES += \
-    device/xiaomi/armani/ubuntu/udev.rules:system/ubuntu/lib/udev/rules.d/70-android.rules \
-    device/xiaomi/armani/ubuntu/display.conf:system/ubuntu/etc/ubuntu-touch-session.d/android.conf \
-    device/xiaomi/armani/ubuntu/apparmor_audio:system/ubuntu/usr/share/apparmor/hardware/audio.d/apparmor-easyprof-ubuntu_android \
-    device/xiaomi/armani/ubuntu/apparmor_graphics:system/ubuntu/usr/share/apparmor/hardware/graphics.d/apparmor-easyprof-ubuntu_android \
-    device/xiaomi/armani/ubuntu/apparmor_video:system/ubuntu/usr/share/apparmor/hardware/video.d/apparmor-easyprof-ubuntu_android \
+    device/xiaomi/armani/ubuntu/udev.rules:system/ubuntu/lib/udev/rules.d/70-armani.rules \
+    device/xiaomi/armani/ubuntu/display.conf:system/ubuntu/etc/ubuntu-touch-session.d/armani.conf \
+    device/xiaomi/armani/ubuntu/apparmor_audio:system/ubuntu/usr/share/apparmor/hardware/audio.d/apparmor-easyprof-ubuntu_armani \
+    device/xiaomi/armani/ubuntu/apparmor_graphics:system/ubuntu/usr/share/apparmor/hardware/graphics.d/apparmor-easyprof-ubuntu_armani \
+    device/xiaomi/armani/ubuntu/apparmor_video:system/ubuntu/usr/share/apparmor/hardware/video.d/apparmor-easyprof-ubuntu_armani \
     device/xiaomi/armani/ubuntu/rcS:system/ubuntu/etc/default/hwclock \
     device/xiaomi/armani/ubuntu/bluetooth-touch-armani.conf:system/ubuntu/etc/init/bluetooth-touch-armani.conf \
     device/xiaomi/armani/ubuntu/bluetooth.sh:system/ubuntu/usr/share/bluetooth-touch/armani
