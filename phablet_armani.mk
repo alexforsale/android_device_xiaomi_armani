@@ -26,8 +26,10 @@ PRODUCT_COPY_FILES += \
     device/xiaomi/armani/ubuntu/apparmor_video:system/ubuntu/usr/share/apparmor/hardware/video.d/apparmor-easyprof-ubuntu_armani \
     device/xiaomi/armani/ubuntu/rcS:system/ubuntu/etc/default/hwclock \
     device/xiaomi/armani/ubuntu/bluetooth-touch-armani.conf:system/ubuntu/etc/init/bluetooth-touch-armani.conf \
-    device/xiaomi/armani/ubuntu/bluetooth.sh:system/ubuntu/usr/share/bluetooth-touch/armani
+    device/xiaomi/armani/ubuntu/bluetooth.sh:system/ubuntu/usr/share/bluetooth-touch/armani \
+    device/xiaomi/armani/ubuntu/config-armani.xml:system/ubuntu/usr/share/powerd/device_config/config-armani.xml
 
 # device id for ubuntu initrd
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.device=armani
+
