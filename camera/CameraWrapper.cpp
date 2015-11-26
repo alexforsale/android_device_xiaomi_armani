@@ -128,10 +128,9 @@ static char *camera_fixup_setparams(int id, const char *settings)
     params.dump();
 #endif
 
-    params.set("antibanding", "50hz");
-    params.set("auto-exposure", "center-weighted");
-    params.set("focus-mode", "continuous-picture");
-    params.set("zsl", "on");
+    if (params.get(android::CameraParameters::KEY_RECORDING_HINT)) {
+        videoMode = !strcmp(params.get(android::CameraParameters::KEY_RECORDING_HINT), "true");
+    }
 
     if (params.get(android::CameraParameters::KEY_SCENE_MODE)) {
         hdrMode = (!strcmp(params.get(android::CameraParameters::KEY_SCENE_MODE), "hdr"));
