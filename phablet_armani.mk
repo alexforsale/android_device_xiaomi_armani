@@ -28,7 +28,10 @@ PRODUCT_COPY_FILES += \
     device/xiaomi/armani/ubuntu/bluetooth-touch-armani.conf:system/ubuntu/etc/init/bluetooth-touch-armani.conf \
     device/xiaomi/armani/ubuntu/bluetooth.sh:system/ubuntu/usr/share/bluetooth-touch/armani \
     device/xiaomi/armani/ubuntu/config-armani.xml:system/ubuntu/usr/share/powerd/device_configs/config-armani.xml \
-    device/xiaomi/armani/ubuntu/init/ubuntu-location-service.override:system/ubuntu/etc/init/ubuntu-location-service.override
+    device/xiaomi/armani/ubuntu/init/ubuntu-location-service.override:system/ubuntu/etc/init/ubuntu-location-service.override \
+    device/xiaomi/armani/ubuntu/msm8226-tapan-snd-card.conf:system/ubuntu/usr/share/alsa/ucm/msm8226-tapan-snd-card/msm8226-tapan-snd-card.conf \
+    device/xiaomi/armani/ubuntu/HiFi:system/ubuntu/usr/share/alsa/ucm/msm8226-tapan-snd-card/HiFi \
+    device/xiaomi/armani/ubuntu/VoiceCall:system/ubuntu/usr/share/alsa/ucm/msm8226-tapan-snd-card/VoiceCall
 
 # device id for ubuntu initrd
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -36,4 +39,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # not automatically compiled by the build process
 PRODUCT_PACKAGES += \
-    libstagefright_soft_ffmpegvdec
+    libstagefright_soft_ffmpegvdec \
+    libstagefright_soft_ffmpegadec
