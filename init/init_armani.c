@@ -89,11 +89,13 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
     property_set("ro.build.product", "armani");
     property_set("ro.build.description", "armani-user 4.4.4 KTU84P V7.0.5.0.KHCMICI release-keys");
     property_set("ro.build.fingerprint", "Xiaomi/armani/armani:4.4.4/KTU84P/V7.0.5.0.KHCMICI:user/release-keys");
+    property_set("ril.num_slots", "2");
 
     /* HM 1SW  */
     if (raw_id==2325) {
         property_set("ro.product.model", "HM 1SW");
         property_set("ro.telephony.default_network", "0,1");
+        property_set("ril.num_slots", "2");
     }
 
     /* HM 1SC */
