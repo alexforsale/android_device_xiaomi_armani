@@ -34,3 +34,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.device=armani
 
+# not automatically compiled by the build process
+PRODUCT_PACKAGES += \
+    libstagefright_soft_ffmpegvdec
