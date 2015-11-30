@@ -63,3 +63,6 @@ ro.telephony.call_ring.multiple=false
 
 # OTA
 cm.updater.uri=http://ota.randomdroids.com/api
+
+# Ubuntu specific property
+ril.device=qcom_msim
