@@ -40,4 +40,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # not automatically compiled by the build process
 PRODUCT_PACKAGES += \
     libstagefright_soft_ffmpegvdec \
-    libstagefright_soft_ffmpegadec
+    libstagefright_soft_ffmpegadec \
+    hwcomposer.default	\
+    libmm-omxcore \
+    librpc \
+    libemoji
