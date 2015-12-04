@@ -1,5 +1,0 @@
-  # video4linux 1 and 2
-  /dev/video* rw,
-
-  # videl4linux 2
-  /dev/v4l-subdev* rw,
